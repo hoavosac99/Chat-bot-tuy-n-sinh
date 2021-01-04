@@ -1,0 +1,142 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: story_Hoi_CauLacBoTiengAnh
+  steps:
+  - intent: Hoi_CauLacBoTiengAnh
+  - action: utter_CauLacBoTiengAnh
+- story: story_Hoi_CauLacBo
+  steps:
+  - intent: Hoi_CauLacBo
+  - action: utter_CauLacBo
+- story: story_Hoi_PhuongThucTuyenSinh
+  steps:
+  - intent: Hoi_PhuongThucTuyenSinh
+  - action: utter_PhuongThucTuyenSinh
+- story: story_Hoi_PhuongThucTuyenSinh
+  steps:
+  - intent: Hoi_DKNamSau
+  - action: utter_DKNamSau
+- story: story_Hoi_CoDuocLamThem
+  steps:
+  - intent: Hoi_CoDuocLamThem
+  - action: utter_CoDuocLamThem
+- story: story_Hoi_LuongLamThem
+  steps:
+  - intent: Hoi_LuongLamThem
+  - action: utter_LuongLamThem
+- story: story_Hoi_LamAnhHuongHocTap
+  steps:
+  - intent: Hoi_LamAnhHuongHocTap
+  - action: utter_LamAnhHuongHocTap
+- story: story_Hoi_BaoNhieuNganh
+  steps:
+  - intent: Hoi_BaoNhieuNganh
+  - action: utter_BaoNhieuNganh
+- story: story_Hoi_NganhHot
+  steps:
+  - intent: Hoi_NganhHot
+  - action: utter_NganhHot
+  - intent: Hoi_ChuyenNganh
+  - action: utter_ChuyenNganh
+  - intent: Hoi_ChuyenNganhCNTT
+  - action: utter_ChuyenNganhCNTT
+- story: story_Hoi_ChuyenNganhCNTT
+  steps:
+  - intent: Hoi_ChuyenNganhCNTT
+  - action: utter_ChuyenNganhCNTT
+- story: story_Hoi_HeChinhQuy
+  steps:
+  - intent: Hoi_HeChinhQuy
+  - action: utter_HeChinhQuy
+- story: story_Hoi_ĐaoTaoLienThong
+  steps:
+  - intent: Hoi_ĐaoTaoLienThong
+  - action: utter_ĐaoTaoLienThong
+- story: story_Hoi_HeVuaLamVuaHoc
+  steps:
+  - intent: Hoi_HeVuaLamVuaHoc
+  - action: utter_HeVuaLamVuaHoc
+- story: story_Hoi_BNToaTangThang
+  steps:
+  - intent: Hoi_BNToaTangThang
+  - action: utter_BNToaTangThang
+- story: story_Hoi_PhongThucHanh
+  steps:
+  - intent: Hoi_PhongThucHanh
+  - action: utter_PhongThucHanh
+- story: story_Hoi_PhongYTe
+  steps:
+  - intent: Hoi_PhongYTe
+  - action: utter_PhongYTe
+- story: story_Hoi_ThuVienDocSach
+  steps:
+  - intent: Hoi_ThuVienDocSach
+  - action: utter_ThuVienDocSach
+- story: story_Hoi_KiTucXaPhong
+  steps:
+  - intent: Hoi_KiTucXaPhong
+  - action: utter_KiTucXaPhong
+- story: story_Hoi_KhuGiaiTri
+  steps:
+  - intent: Hoi_KhuGiaiTri
+  - action: utter_KhuGiaiTri
+- story: story_Hoi_AnToanKhong
+  steps:
+  - intent: Hoi_AnToanKhong
+  - action: utter_AnToanKhong
+- story: story_Hoi_GioDongCua
+  steps:
+  - intent: Hoi_GioDongCua
+  - action: utter_GioDongCua
+- story: ChaoHoiQuenBiet
+  steps:
+  - intent: ChaoHoiQuenBiet
+  - action: action_ChaoHoiQuenBiet
+- story: MenuChat
+  steps:
+  - intent: ChaoHoi
+  - action: utter_ChaoHoi
+  - action: utter_MenuChat
+  - intent: Hoi_GioiThieuChung
+  - action: action_GioiThieuChung
+  - intent: Hoi_BaoNhieuNganh
+  - action: utter_BaoNhieuNganh
+  - intent: Hoi_DangKyXetTuyen
+  - action: utter_DangKyXetTuyen
+  - intent: Hoi_LienHe
+  - action: utter_LienHe
+
+
+
+
+
+
+

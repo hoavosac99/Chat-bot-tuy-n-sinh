@@ -1,0 +1,172 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- ChaoHoi
+- HoiAn
+- Hoi_CauLacBoTiengAnh
+- Hoi_CauLacBo
+- Hoi_PhuongThucTuyenSinh
+- Hoi_DKNamSau
+- Hoi_CoDuocLamThem
+- Hoi_LuongLamThem
+- Hoi_LamAnhHuongHocTap
+- Hoi_BaoNhieuNganh
+- Hoi_NganhHot
+- Hoi_ChuyenNganh
+- Hoi_ChuyenNganhCNTT
+- Hoi_HeChinhQuy
+- Hoi_ĐaoTaoLienThong
+- Hoi_HeVuaLamVuaHoc
+- Hoi_BNToaTangThang
+- Hoi_PhongThucHanh
+- Hoi_PhongYTe
+- Hoi_ThuVienDocSach
+- Hoi_KiTucXaPhong
+- Hoi_KhuGiaiTri
+- Hoi_AnToanKhong
+- Hoi_GioDongCua
+- ChaoHoiQuenBiet
+- Hoi_ChuyenNganhDuLich
+- Hoi_ChuyenNganhQuanTriKinhDoanh
+- Hoi_GioiThieuChung
+- Hoi_DangKyXetTuyen
+- Hoi_LienHe
+entities:
+- user_name
+- sex
+- HoTen
+- Sdt
+- Email
+responses:
+  utter_greet:
+  - text: Chào bạn
+  - text: Rất vui được gặp bạn
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ChaoHoi:
+  - text: Chào bạn mình là trợ lý ảo. Mình rất vui khi được hỗ trợ bạn giải đáp những câu hỏi vể trường đại học Kinh Bắc
+  utter_MenuChat:
+  - text: Dưới đây là các thông tin về trường ĐH kinh Bắc mời bạn lựa chọn hoặc hỏi trực tiếp!
+    buttons:
+    - title: "Giới Thiệu chung"
+      payload: "/ Hoi_GioiThieuChung"
+    - title: "Danh mục ngành"
+      payload: "/ Hoi_BaoNhieuNganh"
+    - title: "Đăng ký xét tuyển"
+      payload: "/ Hoi_DangKyXetTuyen"
+    - title: "Liên hệ"
+      payload: "/ Hoi_LienHe"
+  utter_DangKyXetTuyen:
+  - text: Tôi có thể giúp gì được cho bạn?Hoặc bạn có thể hỏi những điều dưới đây
+    buttons:
+    - title: "Đăng ký xét tuyển"
+      payload: "/ Hoi_PhuongThucTuyenSinh"
+    - title: "Quy trình xét tuyển"
+      payload: "/ Hoi_PhuongThucTuyenSinh"
+  utter_LienHe:
+  - text: Đây là thông tin liên hệ của nhà trường
+  utter_CauLacBoTiengAnh:
+  - text: Trường có Trung tâm TDC, đào tạo và cấp chứng chỉ ngoại ngữ Anh – Trung – Nhật – Hàn từ bậc sơ cấp tới cao cấp
+  utter_CauLacBo:
+  - text: Có các câu lạc bộ CLB Tiếng Anh, CLB Khởi nghiệp,CLB Lữ hành, Nghiên cứu Khoa Học, Thanh niên Xung Kích, CLB Hát Dân ca, Hiphop, Bóng đá,...
+  utter_PhuongThucTuyenSinh:
+  - text: Có 2 cách em đăng ký vào trường. Em có thể lên trường và đăng ký trực tiếp tại trung tâm tuyển sinh của trường hoặc em có thể đăng ký trực tuyến và các thầy cô sẽ hỗ trợ hướng dẫn và gửi đường link đăng ký cho em.
+  utter_DKNamSau:
+  - text: Trong quá trình đi học, các em được giới thiệu đi làm thêm và trải nghiệm có hưởng lương. Nhiều bạn có thể vừa đi học vừa đi làm, tự trang trải học phí, sinh hoạt phí cho bản thân. Mình nên đi học luôn từ bây giờ vì có rất nhiều thuận lợi so với năm sau em đi học.
+  utter_CoDuocLamThem:
+  - text: Có việc làm thêm để kiếm thêm thu nhập
+  utter_LuongLamThem:
+  - text: Mức lương sẽ tùy vào công việc 2.5tr đến 5tr/ tháng, Đặc biệt trong những Tháng Hè sẽ có nhiều Thời Gian Đi Làm hơn và Thu Nhập hàng Chục Triệu Đồng.
+  utter_LamAnhHuongHocTap:
+  - text: Các bạn học tại trường chỉ có nửa buổi sáng hoặc nửa buổi chiều nên thời gian còn lại các bạn có thể xin đi làm thêm, Công việc sẽ tùy vào năng lực và mong muốn của các bạn
+  utter_BaoNhieuNganh:
+  - text: Trường có 14 ngành học, hiện tập trung vào 5 ngành học chính và được đào tạo chất lượng cao.
+  utter_NganhHot:
+  - text: Các ngành hot của trường là Quản trị kinh doanh, Kế toán, Công nghệ thông tin, Quản trị dịch vụ du lịch & lữ hành, Quản trị nhà hàng, khách sạn và Ngôn ngữ Anh.
+  utter_ChuyenNganh:
+  - text: Không biết em đang quan tâm đến ngành học nào?
+  utter_ChuyenNganhCNTT:
+  - text: Đây là thông tin ngành cntt…
+  utter_HeChinhQuy:
+  - text: Hiện nay Trường Đào Tạo 14 Chuyên Ngành, trong đó có 5 Chuyên Ngành trọng điểm Quản trị Kinh Doanh, Kế Toán, Công nghệ Thông tin, Quản Trị Dịch vụ Du lịch và Lữ Hành, Ngôn Ngữ Anh.
+  utter_ĐaoTaoLienThong:
+  - text: Trường có đào tạo hệ liên thông. Đối với bằng Trung cấp liên thông lên ĐH, thời gian đào tạo là 2.5 năm; đối với bằng Cao đẳng liên thông lên ĐH, thời gian đào tạo là 1.5 năm.
+  utter_HeVuaLamVuaHoc:
+  - text: Trường có đào tạo hệ vừa làm vừa học. Hệ VLVh có đào tạo 4 chuyên ngành Quản trị Kinh doanh, Kế toán, Luật kinh tế, Công nghệ thông tin
+  utter_BNToaTangThang:
+  - text: Toà A và tòa B có 8 tầng, trong đó có 6 tầng là các phòng Hội trường, Thực hành, Thí nghiệm, Phòng học cho sinh viên. Tòa C gồm các phòng của các khoa và phòng họp. Bên cạnh đó trường còn có xưởng thêu cho các bạn muốn làm thêm đặc biệt là các bạn sinh viên khuyết tật. Trường có lắp 2 thang máy sử dụng 24/7 từ tầng 1 lên tầng 7.
+  utter_PhongThucHanh:
+  - text: Trường có 2 phòng máy được trang bị hiện đại phục vụ cho việc học tập của Sinh viên
+  utter_PhongYTe:
+  - text: Trường có phòng y tế luôn có Cán bộ y tế thường trực.
+  utter_ThuVienDocSach:
+  - text: Trường có phòng thư viện với rất nhiều các đầu sách cho các khoa, ngành và kiến thức mở rộng. Phòng thư viện có bàn ghế và wifi cho các bạn sinh viên sử dụng.
+  utter_KiTucXaPhong:
+  - text: KTX 100.000/1 tháng, phòng khép kín có nhà WC, nhà tắm, ban công phơi đồ riêng, được nấu ăn trong phòng. KTX Trường Đại Học Kinh Bắc được ví như khách sạn SV. Có 2 loại 4 và 6 bạn/ phòng
+  utter_KhuGiaiTri:
+  - text: Sân thể thao, Trung tâm thể hình ngay trong KTX. Trường nằm tại trung tâm TP Bắc Ninh nên có rất nhiều các trung tâm giải trí, công viên, trung tâm thương mại,...
+  utter_AnToanKhong:
+  - text: KTX chất lượng cao, có camera giám sát từ ngoài cổng và các hành lang. Ngoài ra có Ban quản lý KTX của tỉnh, của trường, đội thanh niên xung kích đảm bảo trật tự và an toàn cho các em. Cho nên mất cắp và đánh nhau khó có thể xảy ra tại KTX
+  utter_GioDongCua:
+  - text: Giờ đóng của là 10h tối. Tuy nhiên, nếu các em có lý do về muộn có thể đăng ký với BQL KTX để được linh động về thời gian
+  utter_MenuHoi:
+  - text: Tôi có thể giúp gì được cho bạn?Hoặc bạn có thể hỏi những điều dưới đây
+    buttons:
+    - title: "Trường có bao nhiêu ngành"
+      payload: "/ Hoi_BaoNhieuNganh"
+    - title: "Ngành hot của trường"
+      payload: "/ Hoi_NganhHot"
+    - title: "Ngành CNTT"
+      payload: "/ Hoi_ChuyenNganhCNTT"
+    - title: "Cơ hội việc làm"
+      payload: "/ Hoi_CoDuocLamThem"
+actions:
+  - utter_ChaoHoi
+  - utter_CauLacBoTiengAnh
+  - utter_CauLacBo
+  - utter_PhuongThucTuyenSinh
+  - utter_DKNamSau
+  - utter_CoDuocLamThem
+  - utter_LuongLamThem
+  - utter_LamAnhHuongHocTap
+  - utter_BaoNhieuNganh
+  - utter_NganhHot
+  - utter_ChuyenNganh
+  - utter_ChuyenNganhCNTT
+  - utter_HeChinhQuy
+  - utter_ĐaoTaoLienThong
+  - utter_HeVuaLamVuaHoc
+  - utter_BNToaTangThang
+  - utter_PhongThucHanh
+  - utter_PhongYTe
+  - utter_ThuVienDocSach
+  - utter_KiTucXaPhong
+  - utter_KhuGiaiTri
+  - utter_AnToanKhong
+  - utter_GioDongCua
+  - utter_MenuHoi
+  - action_ChaoHoiQuenBiet
+  - action_ChuyenNganhDuLich
+  - action_ChuyenNganhQuanTriKinhDoanh
+  - action_GioiThieuChung
+  - utter_MenuChat
+  - utter_DangKyXetTuyen
+  - utter_LienHe
+  

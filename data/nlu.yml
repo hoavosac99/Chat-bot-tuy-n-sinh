@@ -1,0 +1,291 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: ChaoHoi
+  examples: |
+    - chào bot
+    - chào bot nhé
+    - bot ơi
+    - bot nè
+    - ê bot
+    - [anh](sex) hỏi cái
+    - [chị](sex) hỏi cái
+    - Xin chào
+    - Chào bạn
+    - Có ai không giúp tôi cái này
+    - Anh chị ơi
+    - Hello
+- intent: Hoi_GioiThieuChung
+  examples: |
+    - Em muốn tìm hiểu về trường Kinh Bắc
+    - Thông tin về trường ĐH Kinh Bắc
+    - Em muốn biết thông tin trường
+    - Trường Kinh Bắc là gì
+- intent: Hoi_DangKyXetTuyen
+  examples: |
+    - Em muốn hỏi đăng ký xét tuyển
+    - Đăng ký xét tuyển
+    - xét tuyển
+- intent: Hoi_LienHe
+  examples: |
+    - Em muốn biết thông tin liên hệ
+    - Cách liên hệ với nhà trường
+    - Liên hệ
+    - Thông tin liên hệ
+    - Cách liên hệ nhà trường
+- intent: Hoi_ChuyenNganhDuLich
+  examples: |
+    - Ngành du lịch
+    - Ngành DL
+    - Lữ hành,khách sạn
+    - Tư vấn em ngành du lịch
+    - Cho em hỏi ngành du lịch
+    - Em đang thắc mắc ngành du lịch
+    - Em muốn tìm hiều ngành du lịch
+- intent: Hoi_ChuyenNganhQuanTriKinhDoanh
+  examples: |
+    - Ngành quản trị kinh doanh
+    - Tư vấn ngành quản trị kinh doanh
+    - QTKD
+    - qtkd
+    - Ngành QTKD
+    - Em muốn được tư vấn ngành quản trị kinh doanh
+    - Em muốn tìm hiều ngành qtkd
+- intent: ChaoHoiQuenBiet
+  examples: |
+    - [Phú](user_name) đây
+    - anh [Phú](user_name) đây
+- intent: Hoi_HocDaiHocThatNghiep
+  examples: |
+    - Nhiều người nói học đại học thất nghiệp nhiều,em sợ mình cũng thế
+    - Em sợ học đại học cũng không có công việc mong muốn
+    - Học đại học thất nghiệp
+    - Học đại học thất nghiệp
+    - Học đại học không có việc làm
+- intent: Hoi_BaoNhieuNganh
+  examples: |
+    - Trường có bao nhiêu ngành
+    - Có bao nhiêu ngành
+    - Cho em hỏi trường có bao nhiêu nghành
+    - Trường đào tạo bao nhiêu ngành
+    - Trường có những ngành nào
+    - Trường có mấy ngành
+- intent: Hoi_CauLacBoTiengAnh
+  examples: |
+    - trường kinh bắc có câu lạc bộ tiếng anh không
+    - em mất gốc tiếng anh có theo học được không
+    - Muốn Học tiếng anh
+- intent: Hoi_CauLacBo
+  examples: |
+    - Có câu lạc bộ không
+    - Trường có câu lạc bộ không
+    - Câu lạc bộ có không
+- intent: Hoi_PhuongThucTuyenSinh
+  examples: |
+    - Em có thể đăng kí nhập không
+    - Có những hình thức xét tuyển như thế nào
+    - Xét tuyển online được không
+- intent: DangKy
+  examples: |
+    - Em muốn đăng ký nhập học
+    - Em muốn nhập học
+    - Mẫu đăng ký nhập học
+    - Em muốn đăng ký học ở trường
+- intent: Hoi_DKNamSau
+  examples: |
+    - Vì điều kiện kinh tế năm sau đăng kí học được không
+    - Không có tiền đóng tiền học năm sau đăng kí được không
+    - Xét tuyển online được không
+- intent: Hoi_CoDuocLamThem
+  examples: |
+    - Sinh viên có được đi làm thêm không?
+    - Có được đi làm thêm không?
+    - Làm thêm được không?
+- intent: Hoi_LuongLamThem
+  examples: |
+    - Lương làm thêm?
+    - Mức lương làm thêm bao nhiêu?
+    - Lương làm thêm nhiều không?
+    - Làm thêm có nhiều tiền không?
+    - Lương làm thêm thế nào?
+- intent: Hoi_LamAnhHuongHocTap
+  examples: |
+    - Đi làm thêm có ảnh hưởng đến việc học không?
+    - Làm thêm có ảnh hưởng đến việc không
+    - Đi làm ảnh hưởng đến việc học
+- intent: Hoi_BaoNhieuNganh
+  examples: |
+    - Trường bao nhiêu ngành?
+    - Có bao nhiêu ngành?
+    - Trường đào tạo những ngành nào?
+    - Trường có bao nhiêu ngành?
+    - Những ngành trường đào tạo?
+- intent: Hoi_NganhHot
+  examples: |
+    - Những ngành hot của trường là những ngành nào?
+    - Những ngành hot là ngành nào
+    - Trường có những ngành nào hot
+    - Ngành hot ?
+- intent: Hoi_ChuyenNganh
+  examples: |
+    - Em muốn được tư vấn rõ hơn về ngành học
+    - Em muốn tìm hiểu về ngành học
+    - Em muốn hiểu hơn về ngành học anh chị tư vấn giúp em
+- intent: Hoi_ChuyenNganhCNTT
+  examples: |
+    - Em muốn được tư vấn về ngành cntt
+    - Em không biết về ngành cntt,tư vấn giúp em
+    - Em cần biết thêm về ngành cntt
+    - Ngành cntt là gì
+    - cntt
+- intent: Hoi_HeChinhQuy
+  examples: |
+    - Hiện nay trường  có những ngành đào tạo nào
+    - có bao nhiêu ngành trọng điểm tại trường 
+    - Có đào tạo không
+- intent: Hoi_ĐaoTaoLienThong
+  examples: |
+    - Trường có đào tạo liên thông không 
+    - Đào tạo trung cấp liên thông ĐH thì mất bao lâu
+    - Đào tạo cao đẳng liên thông ĐH thì mất bao lâu
+- intent: Hoi_HeVuaLamVuaHoc
+  examples: |
+    - Trường có đào tạo hệ vừa làm vừa học không
+    - Những ngành nào thì có hệ vừa làm vừa học
+- intent: Hoi_BNToaTangThang
+  examples: |
+    - Trường minh có bào nhiêu tầng
+    - Trường có to không
+    - Trường có bao nhiêu tòa nhà
+    - Trường có thang máy không
+- intent: Hoi_PhongThucHanh
+  examples: |
+    - Trường có phòng máy tính không 
+    - Trường có phòng thực hành nào
+- intent: Hoi_PhongYTe
+  examples: |
+    - Trường có phòng y tế không
+    - Nếu không may em bị thương đang ở trên nhà trường thì làm như thế nào
+- intent: Hoi_ThuVienDocSach
+  examples: |
+    - Trường có phòng thư viện không
+    - Trường có wifi miễn phí không
+    - Muốn đọc sách thì đọc được ở đâu
+- intent: Hoi_KiTucXaPhong
+  examples: |
+    - Trường có kí túc xá không
+    - Có kí túc xá không
+    - Có kí túc xá cho sinh viên không
+- intent: Hoi_KhuGiaiTri
+  examples: |
+    - Trong kí túc xá có sân thể thao không
+    - Có khu tập thể hình hay gymer không
+    - Khu vui chơi thì như thế nào
+- intent: Hoi_AnToanKhong
+  examples: |
+    - Sống có an toàn không
+    - Có hiện tượng mất cắp trong kí túc xá không
+    - Có mất cắp trong ký túc không
+- intent: Hoi_GioDongCua
+  examples: |
+    - Kí túc xá mấy giờ đóng cửa
+    - Có giờ đóng cửa không 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

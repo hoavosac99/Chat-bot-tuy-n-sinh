@@ -1,0 +1,120 @@
+[build-system]
+requires = [ "poetry>=1.0.9",]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = [ "py36", "py37", "py38",]
+exclude = "((.eggs | .git | .pytype | .pytest_cache | build | dist))"
+
+[tool.poetry]
+name = "rasa-x"
+version = "0.33.0rc1"
+description = "Machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants"
+authors = [ "Rasa Technologies GmbH <hi@rasa.com>",]
+maintainers = [ "Tom Bocklisch <tom@rasa.com>",]
+homepage = "https://rasa.com"
+repository = "https://github.com/rasahq/rasa-x"
+documentation = "https://rasa.com/docs/rasa-x"
+classifiers = [ "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8",]
+keywords = [ "nlp", "machine-learning", "machine-learning-library", "bot", "bots", "botkit", "rasa conversational-agents", "conversational-ai", "chatbot", "chatbot-framework", "bot-framework",]
+readme = "README.md"
+include = [ "LICENSE.txt", "README.md", "rasax/community/interface/**/*", "rasax/community/key",]
+[[tool.poetry.source]]
+name = "rasa-pypi"
+url = "https://pypi.rasa.com/simple/"
+
+[[tool.poetry.packages]]
+include = "rasax"
+
+[tool.towncrier]
+package = "rasax"
+package_dir = "src/community/rasax"
+filename = "../../CHANGELOG.mdx"
+directory = "../../changelog"
+underlines = "   "
+title_format = "## [{version}] - {project_date}"
+template = "../../changelog/_template.md.jinja2"
+start_string = "<!-- TOWNCRIER -->\n"
+issue_format = "#{issue}"
+[[tool.towncrier.type]]
+directory = "removal"
+name = "Deprecations and Removals"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "feature"
+name = "Features"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "improvement"
+name = "Improvements"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "bugfix"
+name = "Bugfixes"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "doc"
+name = "Improved Documentation"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "misc"
+name = "Miscellaneous internal changes"
+showcontent = true
+
+[tool.poetry.dependencies]
+python = ">=3.6,<3.9"
+setuptools = ">=41.0.0"
+alembic = "^1.0.10"
+kafka-python = "^1.4"
+isodate = "^0.6"
+cryptography = "^2.7"
+GitPython = "^3.1.3"
+ujson = "^1.35"
+jsonschema = "^3.2"
+SQLAlchemy = "^1.3.19"
+psycopg2-binary = "^2.8.2"
+"ruamel.yaml" = "^0.16"
+requests = "^2.23"
+sanic = "^19.12.2"
+sanic-cors = "^0.10.0b1"
+sanic-jwt = "~1.3.2"
+aiohttp = "^3.6"
+pika = "^1.1.0"
+python-dateutil = "~2.8"
+attrs = "^19.3"
+questionary = "~1.5.1"
+apscheduler = "^3.6"
+rasa = "2.0.0rc3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7.9"
+coveralls = "^2.0.0"
+black = "^19.10b0"
+pytest-cov = "^2.10.1"
+pytest-pycodestyle = "^2.1"
+pytest-services = "^2.1"
+pytest-sanic = "^1.1.2"
+pytest = "^5.3.4"
+aioresponses = "^0.6.4"
+pytype = "^2020.7.20"
+towncrier = "^19.2.0"
+toml = "^0.10.1"
+pep440_version_utils = "^0.3.0"
+sphinx = "==3.1.1"
+sphinx-autobuild = "==0.7.1"
+sphinxcontrib-programoutput = "==0.16"
+pygments = "==2.6.1"
+sphinxcontrib-httpdomain = "==1.6.1"
+sphinx-tabs = "==1.1.13"
+rasabaster = "^0.7.29"
+sphinx-copybutton = "==0.2.8"
+pytest-timeout = "^1.4.2"
+
+[tool.poetry.dev-dependencies.sphinxcontrib-versioning]
+git = "https://github.com/RasaHQ/sphinxcontrib-versioning.git"

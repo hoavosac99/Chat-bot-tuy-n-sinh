@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.js": "/static/js/main.2ae9087b.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.72952f09.js",
+    "static/css/2.9c49e7ce.chunk.css": "/static/css/2.9c49e7ce.chunk.css",
+    "static/js/2.daf4e9ae.chunk.js": "/static/js/2.daf4e9ae.chunk.js",
+    "static/js/3.f426b6fa.chunk.js": "/static/js/3.f426b6fa.chunk.js",
+    "static/js/4.f8572bdb.chunk.js": "/static/js/4.f8572bdb.chunk.js",
+    "static/js/5.e3dd1ed9.chunk.js": "/static/js/5.e3dd1ed9.chunk.js",
+    "static/js/6.86a0db9e.chunk.js": "/static/js/6.86a0db9e.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.43b5000184697aad5ae5abe5e10d7434.js": "/precache-manifest.43b5000184697aad5ae5abe5e10d7434.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.daf4e9ae.chunk.js.LICENSE.txt": "/static/js/2.daf4e9ae.chunk.js.LICENSE.txt",
+    "static/js/3.f426b6fa.chunk.js.LICENSE.txt": "/static/js/3.f426b6fa.chunk.js.LICENSE.txt",
+    "static/media/chat_placeholder.svg": "/static/media/chat_placeholder.634e5dc0.svg",
+    "static/media/conversations_placeholder.svg": "/static/media/conversations_placeholder.6ff85dae.svg",
+    "static/media/filters_placeholder.svg": "/static/media/filters_placeholder.3e303cf2.svg",
+    "static/media/models_placeholder.svg": "/static/media/models_placeholder.af83e9db.svg",
+    "static/media/nlu_training_placeholder.svg": "/static/media/nlu_training_placeholder.23a1172e.svg",
+    "static/media/rasa_horizontal_logo.svg": "/static/media/rasa_horizontal_logo.23a7393c.svg",
+    "static/media/rasa_horizontal_logo_white.svg": "/static/media/rasa_horizontal_logo_white.bf7620f2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72952f09.js",
+    "static/css/2.9c49e7ce.chunk.css",
+    "static/js/2.daf4e9ae.chunk.js",
+    "static/js/main.2ae9087b.chunk.js"
+  ]
+}
